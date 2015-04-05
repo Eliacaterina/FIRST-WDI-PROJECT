@@ -11,62 +11,89 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,200,900' rel='stylesheet' type='text/css'>
 
 	 <title>iSpeed</title>
   </head>
   
   <body id="body">
     <div class="container-fluid">
-      <div class="pageOne">
-        <div class="row">
+      <div class="row">
+        <div class="pageOne">
           <div class="col-xs-12" id="content"> 
-            <!-- <div id="bg">
-              <img src="css/Reading.jpg" alt="">
-            </div> -->
             <i class="fa fa-book fa-3x"></i>
             <br>
-            <h1 class="col-xs-10 col-xs-offset-1" id="title">iSpeed Read
+            <h1 class="col-xs-10 col-xs-offset-1 title">iSpeed Read
               <br>
               <span id="description">-A simple way to make the impossible lecture possible-</span>
             </h1>
-            <!-- <div class="dividerClass">
-            </div> -->
+          </div>
+          <div class="slide">
+            <div class="button col-xs-10 col-xs-offset-1">
+              <i id="arrow" class="fa fa-5x fa-arrow-circle-o-right"></i>
+              <div class="easing"></div>
+            </div>
+          </div> 
+        </div>
+      
+        <div class="pagetwo">
+          <div class="col-xs-8 col-xs-offset-2 centered" id="contentTwo">
+            <h1 class="title"> iSpeed Read</h1>
+  
+            <div class="btn-group centered">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="choose">
+                Choose your Russian Classic 
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-override" role="menu">
+                <li><a onclick="$('#start-reading').show();" href="#">War and Peace</a></li>
+                <li><a onclick="startReading()" href="#">Anna Karenina</a></li>
+                <li><a onclick="startReading()" href="#">The Brothers Karamazov</a></li>
+                <li><a onclick="startReading()" href="#">Crime and Punishement</a></li>
+                <li><a onclick="startReading()" href="#">Lolita</a></li>
+              </ul>
+            </div>
+            <div id="start-reading">
+              <div class="buttonStartReading">Start Reading!</div>
+            </div>
+            <div class="centered" id="afterChoosing">
+              <br>
+              <div id="clock">TIMER:</div>
+              <br>
+              <div class="col" id="pageExtract">
+                <p>‘We will talk of it later,’ said Anna Pavlovna with a smile.
+                <br>
+                And having got rid of this young man who did not
+                know how to behave, she resumed her duties as hostess
+                and continued to listen and watch, ready to help at any point where the conversation might happen to flag. As the foreman of a spinning mill, when he has set the hands to work, goes round and notices here a spindle that has stopped or there one that creaks or makes more noise than it should, and hastens to check the machine or set it in proper motion, so Anna Pavlovna moved about her drawing room, approaching now a silent, now a too-noisy group, and by a word or slight rearrangement kept the conversational machine in steady, proper, and regular motion. But amid these cares her anxiety about Pierre was evident. She kept an anxious watch on him when he approached the group round Mortemart to listen to what was being said there, and again when he passed to another group whose center was the abbe.
+                <br>
+                Pierre had been educated abroad, and this reception at
+                Anna Pavlovna’s was the first he had attended in Russia. He knew that all the intellectual lights of Petersburg were gathered there and, like a child in a toyshop, did not know which way to look, afraid of missing any clever conversation that was to be heard. Seeing the selfconfident and refined expression on the faces of those present he was always expecting to hear something very profound. At last he came up to Morio. Here the conversation seemed interesting and he stood waiting for an opportunity to express his own views, as young people
+                are fond of doing.</p>
+              </div>
+                <br>
+                <div class="buttonStopReading">Stop Reading!</div>
+                <br>
+                <div class = "speedTesting"> <strong>Words Per Minute:</strong> </div>
+                <br>
+                <div class = "howLong">If you read for <strong> just 60 minutes a day,</strong> you could finish the novel in <span id="result"><strong>x</strong></span>days.</div>
+              </div>
           </div>
         </div>
-          <div class="slide">
-            <div class="button">
-              <a class="" href="#">START</a>
-                <svg class="icon" x="0px" y="0px"
-                  width="32px" height="32px" viewBox="240 240 32 32" fill="#ffffff">
-                <path d="M256,240c-8.837,0-16,7.164-16,16c0,8.837,7.163,16,16,16s16-7.163,16-16C272,247.164,264.837,240,256,240z M256,269
-                c-7.179,0-13-5.82-13-13c0-7.179,5.821-13,13-13c7.18,0,13,5.821,13,13C269,263.18,263.18,269,256,269z M265.414,254.585l-8-8
-                c-0.781-0.78-2.047-0.78-2.828,0c-0.781,0.781-0.781,2.048,0,2.829l4.586,4.585H248c-1.104,0-2,0.896-2,2s0.896,2,2,2h11.172
-                l-4.586,4.586c-0.781,0.781-0.781,2.047,0,2.828c0.391,0.391,0.902,0.586,1.414,0.586c0.513,0,1.023-0.195,1.414-0.586l8-8
-                C266.195,256.633,266.195,255.367,265.414,254.585z"/>
-                <div class="easing">
-                </div>
-            </div>
-          </div>
-        <!-- <div class="hide">
-          <button class="start reading"></button>
-          <div></div>
-          <h1>Testing</h1>
-          <button class="stop reading"></button>
-        </div> -->
       </div>
     </div>
-
-
-
-
-    
-
-
-
-
-
+  <footer>
+    <ul class=""id="bmenu">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Learn to Speed Read</a></li>
+      <li><a href="#">Other Books</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer> 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/application.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
